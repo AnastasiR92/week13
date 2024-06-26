@@ -1,0 +1,57 @@
+body {
+    padding: 2rem;
+}
+
+#title_header {
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: darkslateblue;
+}
+
+#service_folders{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#title_block1, #title_block2 {
+    padding-bottom: 1rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: cornflowerblue;
+}
+
+.required{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.folders_main{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.task_block1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 1rem;
+}
+
+#button_block1{
+    padding-top: 3rem;
+}
+
+#taskName, #taskPic, #taskComment {
+    width: 35rem;
+    margin-top: 1rem;
+    border: 5px dotted rgb(255, 193, 94);
+}
+
+#taskComment {
+    height: 12rem;
+}
+
+#toSend{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#comments{
+    border-bottom: 1px dashed gray;
+}

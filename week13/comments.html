@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/normalize.css" />
+    <title>Сервис комментариев</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title_header">Сервис комментариев со спам фильтром</h1>
+    </header>
+    <main>
+      <form id="service_folders">
+        <div class="folders_main">
+          <h3 id="title_block1">Оставьте ваш комментарий</h3>
+          <div class="task_block1">
+            <input type="checkbox" id="showName" checked />
+            <label for="showName">Показывать ваше имя</label>
+          </div>
+          <div class="task_block1">
+            <label for="taskName" class="required">Введите ваше Имя</label>
+            <input type="text" id="taskName" />
+          </div>
+          <div class="task_block1">
+            <label for="taskPic" class="required"
+              >Введите ссылку вашего аватара</label
+            >
+            <input type="text" id="taskPic" />
+          </div>
+          <div class="task_block1">
+            <label for="taskComment" class="required"
+              >Оставьте комментарий</label
+            >
+            <textarea type="text" id="taskComment"></textarea>
+          </div>
+          <div id="button_block1">
+            <button id="toSend" type="button" onclick="submitComment()">
+              Отправить
+            </button>
+          </div>
+        </div>
+        <div>
+          <h3 id="title_block2">Чат</h3>
+          <div id="comments"></div>
+        </div>
+      </form>
+    </main>
+    <script src="comments.js"></script>
+  </body>
+</html>
